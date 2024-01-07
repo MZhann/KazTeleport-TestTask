@@ -27,7 +27,6 @@ const Photo = () => {
         }
         fetchPhoto();
         
-        // console.log(localStorage.getItem("likedPhotos"));
     }, []);
 
     const fetchPhoto = async () => {
@@ -41,7 +40,6 @@ const Photo = () => {
                 backgroundImage: `url(${data.urls.regular})`,
                 backgroundSize: "cover",
             });
-            // console.log(data);
         } catch (error) {
             console.error("Error fetching photo from Unsplash by id:", error);
         } finally {

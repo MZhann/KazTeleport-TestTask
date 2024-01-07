@@ -25,13 +25,12 @@ const Favorites = () => {
 
     const [likedPhotosDetails, setLikedPhotosDetails] = useState([]);
 
-
     useEffect(() => {
         const fetchDetails = async () => {
             const details = await Promise.all(
                 likedPhotos.map((photoId) => fetchLikedPhotoDetails(photoId))
             );
-            setLikedPhotosDetails(details.filter((detail) => detail)); 
+            setLikedPhotosDetails(details.filter((detail) => detail));
         };
 
         fetchDetails();
@@ -42,7 +41,7 @@ const Favorites = () => {
             <h1 className="text-4xl font-bold my-8">Избранное</h1>
             <div className="w-full flex flex-col items-center align-middle md:flex-row md:flex-wrap md:justify-center md:w-4/5 max-w-[1200px]">
                 {likedPhotosDetails.map((photo) => (
-                    <div  key={photo.id}>
+                    <div key={photo.id}>
                         <Picture
                             src={photo.urls.regular}
                             alt={photo.alt_description}

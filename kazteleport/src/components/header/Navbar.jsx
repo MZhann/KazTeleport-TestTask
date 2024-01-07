@@ -18,10 +18,12 @@ const Navbar = () => {
 
                 <div className="flex space-x-4 lg:space-x-8 ">
                     {isPhotoPage && (
-                        <Link to="/"
+                        <Link
+                            to="/"
                             className="right-3 flex items-center
                             hover:border-b-2 hover:border-gray-200 transition
-                            duration-300">
+                            duration-300"
+                        >
                             <svg
                                 width="25"
                                 height="25"

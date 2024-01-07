@@ -3,7 +3,7 @@ import Search from "../search-section/Search";
 import Picture from "./Picture";
 import Loading from "/assets/loading-anim.gif";
 import NoImage from "/assets/no-image.gif";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Pictures = () => {
     const [photos, setPhotos] = useState([]);
     const [isLoading, setLoading] = useState(false);
@@ -80,8 +80,15 @@ const Pictures = () => {
                     ))
                 ) : (
                     <div>
-                        <div className="text-center mb-5 mx-2">Images are not found. Please, search for something else :)</div>
-                        <img className="p-2" src={NoImage} alt="images not found.gif" />
+                        <div className="text-center mb-5 mx-2">
+                            Images are not found. Please, search for something
+                            else :)
+                        </div>
+                        <img
+                            className="p-2"
+                            src={NoImage}
+                            alt="images not found.gif"
+                        />
                     </div>
                 )}
             </div>
