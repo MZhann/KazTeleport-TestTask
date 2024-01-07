@@ -10,9 +10,7 @@ function App() {
     return (
         <>
             <Router>
-                {/* //here I can paste navbar */}
                 <Navbar />
-                <Search />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route path="/favorites" element={<Favorites />} />

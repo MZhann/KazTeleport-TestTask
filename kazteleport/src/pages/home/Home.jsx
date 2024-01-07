@@ -1,7 +1,10 @@
+import React from "react";
+import Pictures from "../../components/photo-block/Pictures";
+
 const Home = () => {
     return (
         <div>
-            Home page
+            <Pictures />
         </div>
     )
 }
