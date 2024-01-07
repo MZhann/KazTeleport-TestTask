@@ -15,7 +15,7 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="w-full relative bg-starry bg-cover bg-center h-[230px] flex items-center justify-center">
+    <div className="w-full relative bg-starry bg-cover bg-center h-[230px] flex items-center justify-center ">
       <div className="absolute inset-0 bg-black backdrop-blur backdrop-filter opacity-50"></div>
       <div className="relative w-4/5 h-[70px] flex items-center justify-center">
         <input
