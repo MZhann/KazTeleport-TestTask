@@ -7,7 +7,7 @@ const Modal = ({ imageUrl, onClose }) => {
                 <img
                     src={imageUrl}
                     alt="Full Size"
-                    className="h-[98vh] w-auto mt-[-30px]"
+                    className="h-auto lg:h-[95vh] w-auto mt-[-20px] object-center"
                 />
                 <button
                     onClick={onClose}

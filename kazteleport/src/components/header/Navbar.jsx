@@ -5,9 +5,12 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const location = useLocation();
-    const isPhotoPage = location.pathname === "/photo";
+    const isPhotoPage =
+        location.pathname.startsWith("/photo") ||
+        location.pathname.startsWith("/favorites");
+
     return (
-        <div className="flex items-center justify-center w-full h-[72px] bg-black  px-8 md:px-15 lg:px-40">
+        <div className="flex items-center justify-center  w-full h-[72px] bg-black  px-8 md:px-15 lg:px-40">
             <div className="w-full flex items-center justify-between max-w-[67.5rem]">
                 <Link className="cursor-pointer" to={"/"}>
                     <img src={logo} width={84} height={32.91} alt="logo" />
@@ -37,12 +40,15 @@ const Navbar = () => {
                         </button>
                     )}
 
-                    <button className="flex items-center space-x-2">
+                    <Link
+                        to="/favorites"
+                        className="flex items-center space-x-2"
+                    >
                         <img src={like} width={25} height={23} alt="liked" />
                         <p className="hidden lg:block text-white text-sm">
                             Избранное
                         </p>
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
