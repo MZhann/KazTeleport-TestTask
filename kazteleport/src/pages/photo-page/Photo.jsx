@@ -185,8 +185,9 @@ const Photo = () => {
                     {!isLoading ? (
                         "Loading"
                     ) : (
-                        <div>
-                            <p>Downloading, please wait!</p>{" "}
+                        <div className="flex flex-col items-center">
+                            <p className="text-center">Loading, please wait!</p>
+                            <p className="text-center">It will take a few seconds</p>
                             <img src={loading} alt="loading" />
                         </div>
                     )}

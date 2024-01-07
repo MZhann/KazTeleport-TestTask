@@ -40,7 +40,7 @@ const Favorites = () => {
     return (
         <div className="flex flex-col justify-center items-center">
             <h1 className="text-4xl font-bold my-8">Избранное</h1>
-            <div className="w-full flex flex-col items-center align-middle mt-4 md:flex-row md:flex-wrap md:justify-center md:w-4/5">
+            <div className="w-full flex flex-col items-center align-middle md:flex-row md:flex-wrap md:justify-center md:w-4/5 max-w-[1200px]">
                 {likedPhotosDetails.map((photo) => (
                     <div  key={photo.id}>
                         <Picture

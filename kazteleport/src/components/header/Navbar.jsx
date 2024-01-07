@@ -11,17 +11,17 @@ const Navbar = () => {
 
     return (
         <div className="flex items-center justify-center  w-full h-[72px] bg-black  px-8 md:px-15 lg:px-40">
-            <div className="w-full flex items-center justify-between max-w-[67.5rem]">
+            <div className="w-full flex items-center justify-between max-w-[64.5rem]">
                 <Link className="cursor-pointer" to={"/"}>
                     <img src={logo} width={84} height={32.91} alt="logo" />
                 </Link>
 
                 <div className="flex space-x-4 lg:space-x-8 ">
                     {isPhotoPage && (
-                        <button
-                            className="right-3 flex items-center"
-                            // onClick={handleSearch}
-                        >
+                        <Link to="/"
+                            className="right-3 flex items-center
+                            hover:border-b-2 hover:border-gray-200 transition
+                            duration-300">
                             <svg
                                 width="25"
                                 height="25"
@@ -37,12 +37,12 @@ const Navbar = () => {
                             <p className="hidden lg:block text-white ml-2 text-sm">
                                 Поиск
                             </p>
-                        </button>
+                        </Link>
                     )}
 
                     <Link
                         to="/favorites"
-                        className="flex items-center space-x-2"
+                        className="flex items-center space-x-2 hover:border-b-2 hover:border-gray-200 transition duration-300"
                     >
                         <img src={like} width={25} height={23} alt="liked" />
                         <p className="hidden lg:block text-white text-sm">

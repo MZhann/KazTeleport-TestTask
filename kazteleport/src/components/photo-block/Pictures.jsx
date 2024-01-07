@@ -68,7 +68,7 @@ const Pictures = () => {
     return (
         <div className="flex flex-col items-center ">
             <Search onSearch={handleSearch} />
-            <div className="w-full flex flex-col items-center align-middle mt-4 md:flex-row md:flex-wrap md:justify-center md:w-4/5">
+            <div className="w-full flex flex-col items-center align-middle mt-4 md:flex-row md:flex-wrap md:justify-center md:w-4/5 max-w-[1200px]">
                 {isExist ? (
                     photos.map((photo) => (
                         <Picture
