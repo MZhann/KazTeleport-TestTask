@@ -23,6 +23,7 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 
     ```bash
     cd KazTeleport-TestTask
+    cd kazteleport
     ```
 
 3. Install dependencies:
@@ -63,6 +64,7 @@ npm run dev
 
     ```bash
     cd KazTeleport-TestTask
+    cd kazteleport
     ```
 
 3. Установите зависимости:
