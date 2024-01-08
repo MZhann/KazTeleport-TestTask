@@ -7,7 +7,6 @@ To get started, follow the instructions below.
 ## Getting Started
 
 
-
 ### Prerequisites
 
 Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
